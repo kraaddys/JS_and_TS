@@ -1,0 +1,12 @@
+.mainText {
+    font-family: Montserrat;
+    font-style: italic;
+    font-size: 35px;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+.activityText {
+    display: flex;
+    justify-content: center;
+}
