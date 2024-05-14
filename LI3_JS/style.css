@@ -1,0 +1,93 @@
+/* Общие стили для всего документа */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Montserrat, sans-serif, sans-serif;
+    color: #2e2e2e;
+}
+
+/* Стили для таблицы с транзакциями */
+table {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Стили для строк с положительными и отрицательными транзакциями */
+.positive {
+    background-color: lightgreen;
+}
+
+.negative {
+    background-color: lightcoral;
+}
+
+/* Стили для формы добавления транзакций */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 300px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #2e2e2e;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: #e7e0e0;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+}
+
+input:hover, select:hover {
+    filter: drop-shadow(1px 1px 3px #bebcbc);
+}
+
+.mainButton {
+    transition: .2s ease;
+}
+
+.mainButton:hover {
+    background-color: #2e2e2e;
+    color: #cccccc;
+    transition: .2s ease;
+}
+
+/* Стили для блока с подробным описанием транзакции и общей суммы */
+#detailedDescription, #totalAmount {
+    width: 80%;
+    max-width: 600px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Дополнительные стили для блока с подробным описанием транзакции */
+#detailedDescription {
+    background-color: #f8f8f8;
+}
+
+/* Дополнительные стили для блока с общей суммой */
+#totalAmount {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
